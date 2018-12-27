@@ -36,7 +36,7 @@ then
 * `g . i2 = f2`
 
 # project description
-We provide basic implementation of `Either`:
+We provide basic implementation of `Either` + tests:
 ```
 public interface Either<L, R> {
 
