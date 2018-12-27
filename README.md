@@ -21,3 +21,16 @@ unique morphism `g :: X -> P` such that:
 # disjoint union of sets is a coproduct in the Set category
 _Reference_: https://en.wikipedia.org/wiki/Disjoint_union
 
+let `A + B := {(a, 1) | a e A} u {(b, 2) | b e B}` be the coproduct
+with injections:
+* `i1(a) = (a, 1)`
+* `i2(b) = (b, 2)`
+    
+if there is other object `X` with injections `f1` and `f2` we 
+define
+```
+g(x, delta) = f(x) if delta = 1 or g(x) if delta = 2
+```
+then
+* `g . i1 = f1`
+* `g . i2 = f2`
